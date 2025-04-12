@@ -51,7 +51,7 @@ function buildSwaggerSpec() {
       info: {
         title: 'Contract Generator API',
         version: '1.0.0',
-        description: 'API para geração de contratos PDF com marca d’água dinâmica',
+        description: 'API para geração de contratos PDFs a partir de templates HTML.',
       },
       components: {
         securitySchemes: {
