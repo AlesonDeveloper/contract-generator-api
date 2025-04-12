@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Investment Contract - Full Template</title>
+  <style>
+    @page {
+      margin: 20mm;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      padding: 0;
+      margin: 0;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      background-image: url('{{watermarkBase64}}');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      opacity: 0.1;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    p,
+    ul {
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+      list-style-type: lower-alpha;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    .signature {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .signature-line {
+      margin-top: 40px;
+      display: inline-block;
+      border-top: 1px solid #000;
+      width: 300px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>TERMO DE ADESÃO E ADQUIRÊNCIA</h2>
+
+  <p>Por meio deste instrumento, eu, <strong>{{name}}</strong>, inscrito(a) no CPF sob o nº <strong>{{cpf}}</strong>, doravante denominado(a) "Adquirente", DECLARO estar ciente dos seguintes riscos, não taxativos, relacionados à realização do investimento em Ativos Digitais emitidos pela <strong>{{thirdPartyCompanyName}}</strong>, conforme detalhado no Documento X, por meio da infraestrutura tecnológica fornecida pela A&amp;P Bank Investimento.</p>
+
+  <h3>1. Sobre a Emissão e Legitimidade da Operação</h3>
+  <p>A empresa <strong>{{thirdPartyCompanyName}}</strong>, inscrita no CNPJ/MF sob o nº <strong>{{thirdPartyCompanyCnpj}}</strong>, com sede na cidade de <strong>{{thirdPartyCompanyCity}}</strong>, Estado de <strong>{{thirdPartyCompanyState}}</strong>, na <strong>{{thirdPartyCompanyAddress}}</strong>, atua como emissora e responsável legal pelos Ativos Digitais, conduzindo suas operações em conformidade com a legislação brasileira vigente, em especial a Lei nº 14.478/2022, que regula o mercado de ativos virtuais no Brasil e estabelece os requisitos para prestadores de serviços de ativos virtuais (VASPs).</p>
+
+  <p>A operação também observa as diretrizes estabelecidas pela Resolução do Conselho Monetário Nacional (CMN) nº 4.658/2018, que dispõe sobre política de segurança cibernética e requisitos para armazenamento e processamento de dados em serviços financeiros digitais, bem como eventuais normativas do Banco Central do Brasil e da Comissão de Valores Mobiliários (CVM), caso aplicáveis aos Ativos Digitais emitidos.</p>
+
+  <p>A A&amp;P Bank Arbitrage atua exclusivamente como fornecedora da infraestrutura tecnológica que permite a compra, gestão e movimentação dos Assets Digitais. A A&amp;P Bank Arbitrage não é emissora dos assets e não se responsabiliza por eventuais garantias, rentabilidade ou liquidez das aquisições.</p>
+
+  <p>Dessa forma, a presente operação não se caracteriza como oferta pública de valores mobiliários, sendo realizada em ambiente privado e restrito, de acordo com a legislação aplicável e dentro dos limites regulatórios estabelecidos.</p>
+
+  <h3>2. Riscos Associados às Aquisições</h3>
+  <ul>
+    <li>Possibilidade de perda parcial ou total do capital investido, decorrente de oscilações de mercado, inadimplência ou qualquer outro fator que afete os assets lastreados no Anexo X;</li>
+    <li>Inexistência de garantia de retorno estimado ou liquidez imediata das aquisições realizados por meio da infraestrutura fornecida pela A&amp;P Bank Arbitrage;</li>
+    <li>Ausência de uma oferta pública de valores mobiliários, uma vez que a operação ocorre em uma área restrita e destinada a adquirentes que desejam adquirir Assets Digitais lastreados, não se caracterizando como captação pública de recursos nos termos da legislação vigente;</li>
+    <li>Risco de crédito relacionado aos Assets Digitais lastreados no ASSET DIGITAL de SIGLA "<strong>{{assetSigla}}</strong>", o qual serve como base para a estruturação da aquisição, mas não constitui garantia de retorno estimado financeiro;</li>
+    <li>Riscos associados à eventual falta de liquidez dos Assets Digitais, visto que não há mercado secundário regulamentado para negociação dessas aquisições;</li>
+    <li>Possibilidade de alterações regulatórias que possam impactar as operações realizadas pela <strong>{{thirdPartyCompanyName}}</strong>, incluindo mudanças em normas aplicáveis a assets digitais, de aquisições de tokens e serviços geral.</li>
+  </ul>
+
+  <h3>3. Responsabilidade do Adquirente</h3>
+  <p>O(a) Adquirente, por este ato, garante que leu e compreendeu os riscos envolvidos na aquisição e DECLARA que todas as operações realizadas são de sua única e exclusiva responsabilidade.</p>
+
+  <div class="signature">
+    <p><strong>{{contractCity}}, {{contractDate}}</strong></p>
+    <div class="signature-line">{{signatureName}}</div>
+  </div>
+
+</body>
+
+</html>
