@@ -94,8 +94,8 @@ Content-Type: application/json
   "thirdPartyCompanyState": "SP",
   "thirdPartyCompanyAddress": "Rua Exemplo, 123",
   "assetSigla": "ASSET",
-  "contractCity": "São Paulo",
-  "contractDate": "01/01/2025",
+  "contractCity": "São Paulo - SP",
+  "contractDate": "26 de fevereiro de 2025",
   "signatureName": "João Silva"
 }
 ```
