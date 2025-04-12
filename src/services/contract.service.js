@@ -1,6 +1,6 @@
 const handlebars = require('handlebars');
 const puppeteer = require('puppeteer');
-const FileSystemProvider = require('./templateProvider/fileSystemProvider');
+const FileSystemProvider = require('../providers/fileSystemProvider');
 const logger = require('../config/logger');
 
 class ContractService {

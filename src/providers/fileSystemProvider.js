@@ -1,10 +1,10 @@
 const fs = require('fs');
 const path = require('path');
-const TemplateProvider = require('./fileSystemProvider.interface');
+const AbstractFileSystemTemplateProvider = require('../interfaces/fileSystemProvider.interface');
 
-class FileSystemTemplateProvider extends TemplateProvider {
+class FileSystemTemplateProvider extends AbstractFileSystemTemplateProvider {
   async getTemplate(templateName) {
-    const templatePath = path.join(__dirname, '..', '..', 'templates', `${templateName}.html`);
+    const templatePath = path.join(__dirname, '..', 'templates', `${templateName}.html`);
 
     if (!fs.existsSync(templatePath)) {
       throw new Error(`Template not found: ${templateName}`);
@@ -14,7 +14,7 @@ class FileSystemTemplateProvider extends TemplateProvider {
   }
 
   async getWatermarkBase64() {
-    const watermarkPath = path.join(__dirname, '..', '..', 'templates', 'logo.png');
+    const watermarkPath = path.join(__dirname, '..', 'templates', 'logo.png');
 
     if (!fs.existsSync(watermarkPath)) {
       throw new Error('Watermark image not found');
